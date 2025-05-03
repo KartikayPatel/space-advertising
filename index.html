@@ -8,6 +8,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 </head>
 <header>
   <div class="container">
@@ -23,43 +25,53 @@
   </div>
 </header>
 
-  <section id="hero">
-    <h2>We Bring Your Signage Ideas to Life</h2>
-    <p>Trusted signage and display solutions</p>
-  </section>
+<div class="swiper mySwiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide custom-slide">
+      <img src="images/printing/Branded-Digital-Signage.jpg" alt="Slide 1" />
+    </div>
+    <div class="swiper-slide custom-slide">
+      <img src="images/printing/digitalprinting.webp" alt="Slide 2" />
+    </div>
+    <div class="swiper-slide custom-slide">
+      <img src="images/printing/promotional.jpg" alt="Slide 3" />
+    </div>
+  </div>
 
-  <!-- <section id="about">
-    <h2>About Us</h2>
-    <p>Space Advertising Solution is your go-to place for high-quality signage, branding, and display boards.</p>
-  </section> -->
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+
+  <div class="swiper-pagination"></div>
+</div>
+
 
   <section id="services">
     <h2 class="services-heading">High-Quality Custom Printing Services</h2>
     <div class="services-grid">
       <div class="service-card-wrapper">
         <div class="service-card">
-          <img src="images/flexprinting.jpg" alt="Printing">
+          <img src="images/printing/digitalprinting.webp" alt="Printing">
         </div>
         <h3 class="service-title">Printing</h3>
       </div>
   
       <div class="service-card-wrapper">
         <div class="service-card">
-          <img src="images/Branded-Digital-Signage.jpg" alt="Signages">
+          <img src="images/printing/Branded-Digital-Signage.jpg" alt="Signages">
         </div>
         <h3 class="service-title">Signages</h3>
       </div>
   
       <div class="service-card-wrapper">
         <div class="service-card">
-          <img src="images/promotional.jpg" alt="Promotional Material">
+          <img src="images/printing/promotional.jpg" alt="Promotional Material">
         </div>
         <h3 class="service-title">Promotional Material</h3>
       </div>
   
       <div class="service-card-wrapper">
         <div class="service-card">
-          <img src="images/retails.jpg" alt="Retail">
+          <img src="images/printing/retails.jpg" alt="Retail">
         </div>
         <h3 class="service-title">Retail</h3>
       </div>
@@ -98,6 +110,8 @@
   </section>  
 
   <section id="projects">
+    <div class="project-bg-shape shape1"></div>
+<div class="project-bg-shape shape2"></div>
     <h2 class="projects-heading">Our Projects</h2>
     <div class="project-grid">
       <div class="project-card">
@@ -128,28 +142,62 @@
     <h2 class="clients-heading">Our Clients</h2>
     <div class="swiper clients-swiper">
       <div class="swiper-wrapper">
-        <div class="swiper-slide"><img src="images/anmol.jpg" alt="Client 1"></div>
-        <div class="swiper-slide"><img src="images/Vectus.jpg" alt="Client 2"></div>
-        <div class="swiper-slide"><img src="images/prayag.jpg" alt="Client 3"></div>
-        <div class="swiper-slide"><img src="images/redcliff.jpg" alt="Client 4"></div>
-        <div class="swiper-slide"><img src="images/suretest.jpg" alt="Client 5"></div>
-        <div class="swiper-slide"><img src="images/tata1mg.jpg" alt="Client 6"></div>
-        <div class="swiper-slide"><img src="images/tops.jpg" alt="Client 7"></div>
+        <div class="swiper-slide"><img src="images/clients/anmol.jpg" alt="Client 1"></div>
+        <div class="swiper-slide"><img src="images/clients/prayag.jpg" alt="Client 2"></div>
+        <div class="swiper-slide"><img src="images/clients/redcliff.jpg" alt="Client 3"></div>
+        <div class="swiper-slide"><img src="images/clients/suretest.jpg" alt="Client 4"></div>
+        <div class="swiper-slide"><img src="images/clients/tata1mg.jpg" alt="Client 5"></div>
+        <div class="swiper-slide"><img src="images/clients/tops.jpg" alt="Client 6"></div>
+        <div class="swiper-slide"><img src="images/clients/Vectus.jpg" alt="Client 7"></div>
       </div>
     </div>
   </section>
    
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <p>Phone: +91-9876543210</p>
-    <p>Email: spaceadsolutions@example.com</p>
-    <form action="https://formspree.io/f/YOUR_ID" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required />
-      <input type="email" name="email" placeholder="Your Email" required />
-      <textarea name="message" placeholder="Your Message" required></textarea>
-      <button type="submit">Send</button>
+  <section class="contact-container">
+    <div class="contact-info">
+      <h2>Contact Us</h2>
+      <p>Email, call, or complete the form to learn how we can help.</p>
+      <p><strong>Email:</strong> space.advts10@gmail.com</p>
+      <p><strong>Phone:</strong> 9410607171</p>
+      <!-- <p><a href="#">Customer Support</a></p> -->
+      <div class="info-columns">
+        <div>
+          <h4>Customer Support</h4>
+          <p>Available 24/7 to address your concerns.</p>
+        </div>
+        <div>
+          <h4>Feedback</h4>
+          <p>Help us improve with your suggestions.</p>
+        </div>
+        <div>
+          <h4>Media Inquiries</h4>
+          <p>Email space.advts10@gmail.com</p>
+        </div>
+      </div>
+    </div>
+    <form class="contact-form">
+      <h3>Get in Touch</h3>
+      <div class="form-row">
+        <input type="text" placeholder="First name" required />
+        <input type="text" placeholder="Last name" required />
+      </div>
+      <input type="email" placeholder="Your email" required />
+      <input type="text" placeholder="Phone number" required />
+      <textarea placeholder="How can we help?" required></textarea>
+      <button type="submit">Submit</button>
     </form>
   </section>
+  
+
+  <iframe 
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14027.625835538404!2d77.7244319!3d28.9557261!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390c6501308173dd%3A0xfc5f677e8749909e!2sSpace%20Advertising%20Solution!5e0!3m2!1sen!2sin!4v1714658380575!5m2!1sen!2sin" 
+  width="100%" 
+  height="300" 
+  style="border:0;" 
+  allowfullscreen="" 
+  loading="lazy" 
+  referrerpolicy="no-referrer-when-downgrade">
+</iframe>
 
   <footer>
     <p>© 2025 Space Advertising Solution</p>
@@ -175,6 +223,22 @@
         },
       },
     });
+
+    var sviper = new Swiper(".mySwiper", {
+    loop: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
   </script>
   
 </body>
