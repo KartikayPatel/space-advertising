@@ -23,6 +23,7 @@ header .container {
 }
 nav {
   display: flex;
+  list-style: none;
   align-items: center;
   gap: 1.5rem; /* Space between links */
 }
@@ -32,6 +33,9 @@ nav a {
   font-weight: 500;
   font-size: 1rem;
   transition: color 0.3s ease;
+}
+nav li {
+  position: relative;
 }
 nav a:hover {
   color: #D8B4E2; /* Soft hover */
@@ -47,6 +51,21 @@ nav a:hover {
   height: 100vh;
 }
 
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  list-style: none;
+  padding: 1rem;
+  width: 200px;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
 .swiper-slide img {
   width: 100%;
   height: 100%;
@@ -335,8 +354,8 @@ footer {
 }
 
 .clients-swiper .swiper-slide img {
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 90%;
   object-fit: contain; /* fills the container fully */
   display: block;
   transition: transform 0.3s ease; /* hover effect */
@@ -387,7 +406,7 @@ footer {
   margin-bottom: 0.25rem;
 }
 
-.contact-form {
+#contact-form {
   flex: 1;
   min-width: 300px;
   background: white;
@@ -399,7 +418,7 @@ footer {
   gap: 1rem;
 }
 
-.contact-form h3 {
+#contact-form h3 {
   margin-bottom: 1rem;
 }
 
@@ -412,8 +431,8 @@ footer {
   flex: 1;
 }
 
-.contact-form input,
-.contact-form textarea {
+#contact-form input,
+#contact-form textarea {
   padding: 0.8rem;
   font-size: 1rem;
   border: 1px solid #ccc;
@@ -421,7 +440,7 @@ footer {
   resize: vertical;
 }
 
-.contact-form button {
+#contact-form button {
   padding: 1rem;
   background: #2A0E3C;
   color: white;
@@ -432,7 +451,7 @@ footer {
   transition: background 0.3s ease;
 }
 
-.contact-form button:hover {
+#contact-form button:hover {
   background: #5E2B6D;
 }
 
@@ -474,7 +493,7 @@ footer {
   .why-card,
   .project-card,
   .contact-info,
-  .contact-form {
+  #contact-form {
     max-width: 90%;
     width: 100%;
   }

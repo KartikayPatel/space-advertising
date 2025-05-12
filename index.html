@@ -8,6 +8,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 </head>
@@ -18,8 +19,17 @@
       <h1>Space Advertising Solution</h1>
     </div>
     <nav>
+      <a href="#home.html">Home</a>
       <a href="#AboutUS.html">About Us</a>
-      <a href="#Service.html">Services We Offer</a>
+      <li class="dropdown">
+        <a href="#">What We Do</a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Printing</a></li>
+          <li><a href="#">Signages</a></li>
+          <li><a href="#">Promotional Material</a></li>
+          <li><a href="#">Retail</a></li>
+        </ul>
+      </li>
       <a href="#ContactUs.html">Contact Us</a>
     </nav>
   </div>
@@ -85,7 +95,7 @@
       <div class="why-card">
         <img src="images/rating.svg" alt="Experience Icon">
         <h3>Expertise That Matters</h3>
-        <p>With 12+ years of signage & printing experience, Lakshya Signages is known for its unmatched quality and diverse capabilities. Your vision is in expert hands.</p>
+        <p>With 12+ years of signage & printing experience, Space Advertising Solution is known for its unmatched quality and diverse capabilities. Your vision is in expert hands.</p>
         <button class="why-btn">Learn More</button>
       </div>
       <div class="why-card">
@@ -111,44 +121,56 @@
 
   <section id="projects">
     <div class="project-bg-shape shape1"></div>
-<div class="project-bg-shape shape2"></div>
+    <div class="project-bg-shape shape2"></div>
     <h2 class="projects-heading">Our Projects</h2>
-    <div class="project-grid">
-      <div class="project-card">
-        <img src="images/project1.jpg" alt="Project 1" />
-        <div class="project-info">
-          <h3>Event Branding</h3>
-          <p>Vibrant print materials designed for corporate events.</p>
+  
+    <div class="swiper-container project-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="images/clients/anmol.jpg" alt="Project 1" />
         </div>
-      </div>
-      <div class="project-card">
-        <img src="images/project2.jpg" alt="Project 2" />
-        <div class="project-info">
-          <h3>Retail Displays</h3>
-          <p>Customized signage for modern retail outlets.</p>
+        <div class="swiper-slide">
+          <img src="images/clients/Vectus.jpg" alt="Project 2" />
         </div>
-      </div>
-      <div class="project-card">
-        <img src="images/project3.jpg" alt="Project 3" />
-        <div class="project-info">
-          <h3>Outdoor Campaigns</h3>
-          <p>Large format prints for visibility and impact.</p>
+        <div class="swiper-slide">
+          <img src="images/clients/prayag.jpg" alt="Project 3" />
         </div>
+        <!-- Add more slides as needed -->
       </div>
+      <div class="swiper-pagination"></div>
     </div>
-  </section>  
+  </section>
+    
 
   <section id="clients">
     <h2 class="clients-heading">Our Clients</h2>
     <div class="swiper clients-swiper">
       <div class="swiper-wrapper">
-        <div class="swiper-slide"><img src="images/clients/anmol.jpg" alt="Client 1"></div>
-        <div class="swiper-slide"><img src="images/clients/prayag.jpg" alt="Client 2"></div>
-        <div class="swiper-slide"><img src="images/clients/redcliff.jpg" alt="Client 3"></div>
-        <div class="swiper-slide"><img src="images/clients/suretest.jpg" alt="Client 4"></div>
-        <div class="swiper-slide"><img src="images/clients/tata1mg.jpg" alt="Client 5"></div>
-        <div class="swiper-slide"><img src="images/clients/tops.jpg" alt="Client 6"></div>
-        <div class="swiper-slide"><img src="images/clients/Vectus.jpg" alt="Client 7"></div>
+        <div class="swiper-slide"><img src="images/clients/1 Tops.png" loading="lazy" alt="Client 1"></div>
+        <div class="swiper-slide"><img src="images/clients/2 Anmol.png" loading="lazy" alt="Client 2"></div>
+        <div class="swiper-slide"><img src="images/clients/3 SriSri.png" loading="lazy" alt="Client 3"></div>
+        <div class="swiper-slide"><img src="images/clients/4 Vectus.png" loading="lazy" alt="Client 4"></div>
+        <div class="swiper-slide"><img src="images/clients/5 Wavin.png" loading="lazy" alt="Client 5"></div>
+        <div class="swiper-slide"><img src="images/clients/6 Prayag.png" loading="lazy" alt="Client 6"></div>
+        <div class="swiper-slide"><img src="images/clients/8 Prabhat.png" loading="lazy" alt="Client 7"></div>
+        <div class="swiper-slide"><img src="images/clients/9 Emami.png" loading="lazy" alt="Client 8"></div>
+        <div class="swiper-slide"><img src="images/clients/10 Beijer Ref.png" loading="lazy" alt="Client 9"></div>
+        <div class="swiper-slide"><img src="images/clients/11 Okaya.png" loading="lazy" alt="Client 10"></div>
+        <div class="swiper-slide"><img src="images/clients/12 Vanesa.png" loading="lazy" alt="Client 11"></div>
+        <div class="swiper-slide"><img src="images/clients/13 Denver.png" loading="lazy" alt="Client 12"></div>
+        <div class="swiper-slide"><img src="images/clients/14 ENVY.png" loading="lazy" alt="Client 13"></div>
+        <div class="swiper-slide"><img src="images/clients/15 Pathkind.jpg" loading="lazy" alt="Client 14"></div>
+        <div class="swiper-slide"><img src="images/clients/16 Redcliffe.png" loading="lazy" alt="Client 15"></div>
+        <div class="swiper-slide"><img src="images/clients/17 Tata 1mg Lab.png" loading="lazy" alt="Client 16"></div>
+        <div class="swiper-slide"><img src="images/clients/18 Metropolish.png" loading="lazy" alt="Client 17"></div>
+        <div class="swiper-slide"><img src="images/clients/19 SureTest Path Lab.png" loading="lazy" alt="Client 18"></div>
+        <div class="swiper-slide"><img src="images/clients/20 Core.png" loading="lazy" alt="Client 19"></div>
+        <div class="swiper-slide"><img src="images/clients/21 Lumax.png" loading="lazy" alt="Client 20"></div>
+        <div class="swiper-slide"><img src="images/clients/22 Zomoto.png" loading="lazy "alt="Client 21"></div>
+        <div class="swiper-slide"><img src="images/clients/23 Supertech.png" loading="lazy" alt="Client 22"></div>
+        <div class="swiper-slide"><img src="images/clients/24 Jal joy of india.png" loading="lazy" alt="Client 23"></div>
+        <div class="swiper-slide"><img src="images/clients/25 Sargam.png" loading="lazy" alt="Client 24"></div>
+        <div class="swiper-slide"><img src="images/clients/7 Paras.png" loading="lazy" alt="Client 7"></div>
       </div>
     </div>
   </section>
@@ -175,7 +197,7 @@
         </div>
       </div>
     </div>
-    <form class="contact-form">
+    <form id="contact-form">
       <h3>Get in Touch</h3>
       <div class="form-row">
         <input type="text" placeholder="First name" required />
@@ -203,10 +225,11 @@
     <p>© 2025 Space Advertising Solution</p>
   </footer>
   <script>
-    const swiper = new Swiper('.clients-swiper', {
+    // 1. Clients Swiper
+    const clientsSwiper = new Swiper('.clients-swiper', {
       loop: true,
       autoplay: {
-        delay: 2500,
+        delay: 1500,
         disableOnInteraction: false,
       },
       slidesPerView: 3,
@@ -223,23 +246,86 @@
         },
       },
     });
-
-    var sviper = new Swiper(".mySwiper", {
-    loop: true,
-    autoplay: {
-      delay: 3000,
-      disableOnInteraction: false,
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-  });
+  
+    // 2. Generic Swiper (e.g., testimonials or gallery)
+    const mySwiper = new Swiper(".mySwiper", {
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  
+    // 3. Project Swiper (coverflow style)
+    const projectSwiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      loop: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 100,
+        modifier: 2.5,
+        slideShadows: false,
+      },
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+  
+    // Lazy load HTML for services card
+    const card = document.getElementById('services-card');
+    let contentLoaded = false;
+  
+    document.querySelector('.services-wrapper').addEventListener('mouseenter', () => {
+      if (!contentLoaded) {
+        fetch('space_advertising_solution/head/Service.html')
+          .then(response => response.text())
+          .then(html => {
+            card.innerHTML = html;
+            contentLoaded = true;
+          })
+          .catch(err => {
+            card.innerHTML = "<p>Unable to load services.</p>";
+            console.error(err);
+          });
+      }
+    });
+  
+    // EmailJS Initialization
+    (function() {
+      emailjs.init("iqNyZAd8syGE4xfYa");
+    })();
+  
+    // Contact Form Submission
+    document.getElementById("contact-form").addEventListener("submit", function(e) {
+      e.preventDefault();
+  
+      emailjs.sendForm('service_644kul9', 'template_43uf9zt', this)
+        .then(function(response) {
+          alert('Email sent successfully!');
+        }, function(error) {
+          alert('Failed to send email. Please try again.');
+          console.error(error);
+        });
+    });
   </script>
+  
   
 </body>
 </html>
