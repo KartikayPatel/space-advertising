@@ -20,16 +20,47 @@
     </div>
     <nav>
       <a href="#home.html">Home</a>
+            <!-- WHAT WE DO MENU -->
+<div class="dropdown" id="whatWeDoDropdown">
+  <a href="#" class="dropbtn">What We Do</a>
+  <div class="dropdown-content">
+    <div class="sub-dropdown">
+      <a href="#">Printing ▸</a>
+      <div class="sub-dropdown-content">
+        <a href="#">Offset Printing</a>
+        <a href="#">Digital Printing</a>
+        <a href="#">Large Format</a>
+      </div>
+    </div>
+    <div class="sub-dropdown">
+      <a href="#">Signages ▸</a>
+      <div class="sub-dropdown-content">
+        <a href="#">Indoor Signage</a>
+        <a href="#">Outdoor Signage</a>
+        <a href="#">LED Boards</a>
+      </div>
+    </div>
+    <div class="sub-dropdown">
+      <a href="#">Promotional Material ▸</a>
+      <div class="sub-dropdown-content">
+        <a href="#">Flyers</a>
+        <a href="#">Brochures</a>
+        <a href="#">T-Shirts</a>
+      </div>
+    </div>
+    <div class="sub-dropdown">
+      <a href="#">Retail ▸</a>
+      <div class="sub-dropdown-content">
+        <a href="#">POS Displays</a>
+        <a href="#">Banners</a>
+        <a href="#">Branding</a>
+      </div>
+    </div>
+  </div>
+</div>
+
       <a href="#AboutUS.html">About Us</a>
-      <li class="dropdown">
-        <a href="#">What We Do</a>
-        <ul class="dropdown-menu">
-          <li><a href="#">Printing</a></li>
-          <li><a href="#">Signages</a></li>
-          <li><a href="#">Promotional Material</a></li>
-          <li><a href="#">Retail</a></li>
-        </ul>
-      </li>
+
       <a href="#ContactUs.html">Contact Us</a>
     </nav>
   </div>
@@ -324,6 +355,22 @@
           console.error(error);
         });
     });
+
+    // Dropdown Animation
+  const dropdown = document.getElementById("whatWeDoDropdown");
+  const content = dropdown.querySelector(".dropdown-content");
+  let delayTimeout;
+
+  dropdown.addEventListener("mouseenter", () => {
+    delayTimeout = setTimeout(() => {
+      content.classList.add("show");
+    }, 2000); // 2 seconds delay
+  });
+
+  dropdown.addEventListener("mouseleave", () => {
+    clearTimeout(delayTimeout);
+    content.classList.remove("show");
+  });
   </script>
   
   
